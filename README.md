@@ -10,3 +10,9 @@ Solves the 3D incompressible Navier-Stokes equations using the lattice Boltzmann
 
 ![Alt text](3D LBM AMR/AMR2.png?raw=true "Vorticity based refinement on 2D cylinder case")
 
+# Build
+
+```bash
+cd src
+g++-10 -L/usr/lib/gcc/x86_64-linux-gnu/10 -lgomp -fopenmp -lpthread -foffload=nvptx-none Node.cpp Source.cpp -o amr.out
+```

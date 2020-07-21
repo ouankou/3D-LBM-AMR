@@ -2,7 +2,7 @@
 #define INPUTVARIABLES_H
 
 #include <vector>
-
+#include <string>
 
 //Simulation Parameters
 extern std::string casename;
